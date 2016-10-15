@@ -1,0 +1,324 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;  padding: 0; border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {  display: block;}body {  line-height: 1;}ol, ul {  list-style: none;}blockquote, q { quotes: none;}blockquote:before, blockquote:after,q:before, q:after { content: '';  content: none;}table {  border-collapse: collapse;  border-spacing: 0;}
+
+/* Main forms */
+#panel-area {
+  min-width: 800px;
+}
+
+#admin-dialog {
+	width: 40%;
+  min-width: 300px;
+	margin: auto;
+	margin-top: 100px;
+	background-color: white;
+	border: 1px solid grey;
+	padding-bottom: 25px;
+}
+
+h1.admin-dialog-title {
+  font-size: 30px;
+  margin: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input.admin-dialog-input-text {
+	margin: auto;
+	width: 200px;
+	text-align: center;
+	display: block;
+	margin-bottom: 10px;
+	height: 30px;
+}
+
+div.center-div {
+	margin: auto;
+	text-align: center;
+}
+
+a.admin-dialog-link {
+	margin: auto;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+a.admin-dialog-link:HOVER {
+	text-decoration: underline;
+}
+
+input.admin-dialog-input-button {
+  margin: auto;
+  width: 150px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input.admin-dialog-input-button:HOVER {
+	background-color: white;
+}
+
+h1.install_step_header {
+	font-size: 30px;
+	margin: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+p.install-text {
+	margin: 20px;
+	text-align: center;
+}
+
+select.install-select {
+	text-align: center;
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+input.install-button {
+  text-align: center;
+  width: 100px;
+}
+
+div.install-center-div {
+	text-align: center;
+}
+
+div.block-div {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input.install-text {
+	margin: 4px;
+	width: 45%;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+input.line {
+	display: inline-block;
+}
+
+p.install-error {
+	font-size: 12px;
+	color: red;
+	margin: 5px;
+}
+
+.ap-header-div {
+  width: 100%;
+  text-align: right;
+  background-color: #d8d8d8;
+}
+
+div.ap-header-element {
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 30px;
+  padding-top: 14px;
+}
+
+p.ap-header-text {
+  color: #656565;
+  font-size: 15px;
+  cursor: default;
+}
+
+#ap-main-area {
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#menu-plugin {
+	width: 15%;
+	display: inline-block;
+	height: 200px;
+	vertical-align: top;
+}
+
+#content-plugin {
+  width: calc(84% - 52px);
+  display: inline-block;
+  height: 200px;
+  text-align: left;
+  padding: 25px;
+}
+
+p.ap-text-link {
+  cursor: pointer;
+}
+
+p.ap-text-link:HOVER {
+  color: black;
+}
+
+div.ap-plugin-menu {
+  padding: 10px;
+  padding-top: 15px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #e7e7e7;
+}
+
+div.ap-plugin-menu:HOVER {
+  background-color: #d8d8d8;
+}
+
+div.ap-plugin-menu-selected {
+  background-color: #d8d8d8;
+}
+
+div.ap-plugin-menu-selected:HOVER {
+  cursor: default;
+}
+
+
+/* Plugins default style */
+input {
+	min-height: 30px;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+div.p_header {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid black;
+}
+
+h1.p_title {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+h2.p_title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.p_table table {
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+}
+
+.p_table {
+	font: normal 12px/150% Arial, Helvetica, sans-serif;
+	background: #fff;
+	overflow: hidden;
+	border: 1px solid #D8D8D8;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.p_table table td, .p_table table th {
+	padding: 5px 5px;
+}
+
+.p_table table thead th {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #D8D8D8
+		), color-stop(1, #D8D8D8));
+	background: -moz-linear-gradient(center top, #D8D8D8 5%, #D8D8D8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D8D8D8',
+		endColorstr='#D8D8D8');
+	background-color: #D8D8D8;
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;
+	border-left: 1px solid #E1EEF4;
+	text-align: center;
+}
+
+.p_table table thead th:first-child {
+	border: none;
+}
+
+.p_table table tbody td {
+	color: #000000;
+	border-left: 1px solid #E1EEF4;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.p_table table tbody .alt td {
+	background: #EFEFEF;
+	color: #000000;
+}
+
+.p_table table tbody td:first-child {
+	border-left: none;
+}
+
+.p_table table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+input.p_button {
+	 border-radius: 2px;
+	 background-color: black;
+	 color: white;
+	 border: none;
+	 padding: 5px;
+	 margin: auto;
+	 cursor: pointer;
+}
+
+input.p_button:HOVER {
+   background-color: #A8A8A8;
+}
+
+div.p_content {
+	width: 100%;
+	margin-top: 15px;
+}
+
+div.p_row {
+	width: calc(100% - 20px);
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+img.p_icon {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.p_cursor {
+	cursor: pointer;
+}
+
+a.p_link {
+	text-decoration: none;
+}
+
+.p-hide {
+	display: none;
+}
+
+.w1 {
+  width: 10%;
+  display: inline-block;
+}
+
+.w2 {
+  width: 20%;
+  display: inline-block;
+}
+
+.w4 {
+	width: 40%;
+	display: inline-block;
+}
