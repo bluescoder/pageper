@@ -16,7 +16,7 @@ start_language();
  * Determines language for user and load texts
  */
 function start_language() {
-if (! isset ( $_SESSION [SESSION_PARAM_USER_LANGUAGE] )) {
+	if (! isset ( $_SESSION [SESSION_PARAM_USER_LANGUAGE] )) {
 		$lang = strtolower ( substr ( $_SERVER ['HTTP_ACCEPT_LANGUAGE'], 0, 2 ) );
 		if (is_valid_lang_code ( $lang )) {
 			$_SESSION [SESSION_PARAM_USER_LANGUAGE] = $lang;

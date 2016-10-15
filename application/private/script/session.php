@@ -15,7 +15,6 @@ session_start ( [
 
 $_SESSION [SESSION_PARAM_FIRST_REQUEST] = !isset ( $_SESSION [SESSION_PARAM_FIRST_REQUEST] );
 
-
 /**
  * Checks if this is the first request for session
  * @return True/False

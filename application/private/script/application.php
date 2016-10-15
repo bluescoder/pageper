@@ -16,6 +16,7 @@ define ('MODEL_FOLDER', APPLICATION_PRIVATE . 'script/model/');
 define ('PRIVATE_PLUGIN_FOLDER', APPLICATION_PRIVATE. 'plugin/');
 define ('PUBLIC_PLUGIN_FOLDER', DATA_PRIVATE. 'plugin/');
 
+
 // Initialize request state
 require_once 'configuration.php';
 require_once 'model.php';
@@ -28,6 +29,7 @@ require_once 'users.php';
 require_once 'cypher.php';
 require_once 'plugins.php';
 require_once 'resources.php';
+
 
 
 

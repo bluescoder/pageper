@@ -9,5 +9,4 @@ define ("URL_BASE", "http://localhost");
 define ("URL_BASE_ADMIN", URL_BASE . '/admin');
 define ("VERSION", "1.0");
 
-
 ?>

@@ -11,7 +11,7 @@
 		</div>
 		<div class="ap-header-element">
 			<p id="closeSessionBtn" class="ap-header-text ap-text-link"> <?php echo text('close.session'); ?> </p>
-			<form id="closeSessionForm" action="<?php echo URL_BASE . '/application/public/action.php'; ?>" method="post" target="_self">
+			<form id="closeSessionForm" action="<?php echo PUBLIC_ACTION_URL; ?>" method="post" target="_self">
 				<input type="hidden" name="action" value="action_logout"/>
 			</form>
 		</div>
@@ -29,7 +29,7 @@
 			?>
 			
 			<div class="ap-plugin-menu <?php if($selected ) {echo 'ap-plugin-menu-selected'; } ?>">
-				<form action="<?php echo URL_BASE . '/application/public/action.php'; ?>" method="post" target="_self">
+				<form action="<?php echo PUBLIC_ACTION_URL; ?>" method="post" target="_self">
 					<input type="hidden" name="action" value="set_current_plugin"/>
 					<p class="ap-plugin-menu-name"><?php echo text($plg->nameKey); ?></p>
 					<input name="plugin-folder" type="hidden" value="<?php echo $plg->folder; ?>" />

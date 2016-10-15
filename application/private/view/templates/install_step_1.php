@@ -3,7 +3,7 @@
 <p class="install-text"><?php echo text('select.language'); ?> </p>
 
 <div class="install-center-div">
-	<form action="<?php echo URL_BASE . '/application/public/action.php'; ?>" method="post" target="_self">
+	<form action="<?php echo PUBLIC_ACTION_URL; ?>" method="post" target="_self">
 		<input type="hidden" name="action" value="action_install_step_1"/>
 		<div class="block-div">
 			<select name="lang" class="install-select">

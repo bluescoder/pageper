@@ -4,6 +4,8 @@
  * Script for processing received actions requests
  */
 
+define ('PUBLIC_ACTION_URL', URL_BASE . '/application/public/action.php');
+
 define ('REGISTERED_ACTIONS', 'registered_actions');
 
 /**

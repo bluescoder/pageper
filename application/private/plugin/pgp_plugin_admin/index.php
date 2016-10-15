@@ -7,11 +7,11 @@
 		<table>
 			<thead>
 			  <tr>
-			    <th>Name</th>
-			    <th>Description</th>
-			    <th>Folder</th>
-			    <th>Version</th>
-			    <th>Installed</th>
+			    <th><?php echo text('pgp.plugin.admin.name');?></th>
+			    <th><?php echo text('pgp.plugin.admin.description');?></th>
+			    <th><?php echo text('pgp.plugin.admin.folder');?></th>
+			    <th><?php echo text('pgp.plugin.admin.version');?></th>
+			    <th><?php echo text('pgp.plugin.admin.installed');?></th>
 			    <th></th>
 			  </tr>
 			</thead>
@@ -22,7 +22,7 @@
 					foreach ($userPlugins as $up) {
 				?>
 			  <tr <?php if($alt) { echo 'class="alt"'; } $alt = !$alt; ?>>
-					<form action="<?php echo URL_BASE . '/application/public/action.php'; ?>" method="post" target="_self">
+					<form action="<?php echo PUBLIC_ACTION_URL; ?>" method="post" target="_self">
 						<input type="hidden" name="action" value="<?php if($up->installed) { echo 'pgp_plugin_uninstall'; } else { echo 'pgp_plugin_install'; }?>"/>
 						<input type="hidden" name="plugin" value="<?php echo $up->folder; ?>"/>
 				    <td><?php echo text($up->nameKey); ?></td>

@@ -52,6 +52,7 @@ function action_login() {
 function action_logout() {
 	if (isset ( $_SESSION [SESSION_PARAM_LOGGED_USER] )) {
 		unset($_SESSION [SESSION_PARAM_LOGGED_USER]);
+		session_unset();
 	}
 }
 
@@ -76,7 +77,9 @@ function check_login($username, $password) {
 		$logged_user = new AdminUser($results[0]['id'], $results[0]['alias'], '', $results[0]['first_name'], $results[0]['last_name'], $results[0]['email'], 
 				$results[0]['admin_user_level'], $results[0]['lang'], $results[0]['gender']);
 		$_SESSION [SESSION_PARAM_LOGGED_USER] = $logged_user;
+		switch_language($logged_user->language);
 	}
+	
 }
 
 ?>

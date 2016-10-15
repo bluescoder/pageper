@@ -3,7 +3,7 @@
 <p class="install-text"><?php echo text('fill.form'); ?> </p>
 
 <div class="install-center-div">
-	<form action="<?php echo URL_BASE . '/application/public/action.php'; ?>" method="post" target="_self">
+	<form action="<?php echo PUBLIC_ACTION_URL; ?>" method="post" target="_self">
 		<input type="hidden" name="action" value="action_install_step_2"/>
 		<div class="block-div">
 			<input class="install-text" type="text" name="firstName" placeholder="<?php echo text('first.name'); ?>" <?php if(isset($_POST['firstName'])) { echo "value=\"" . $_POST['firstName'] . "\""; }?> />
@@ -27,7 +27,7 @@
 		<input class="install-button line" type="submit" value="<?php echo text('install.next.btn'); ?>"/>
 	</form>
 	
-	<form id="backForm" action="<?php echo URL_BASE . '/application/public/action.php'; ?>" method="post" target="_self">
+	<form id="backForm" action="<?php echo PUBLIC_ACTION_URL; ?>" method="post" target="_self">
 		<input type="hidden" name="action" value="action_install_step_2_back"/>
 		<input type="hidden" name="back"/>
 	</form>
